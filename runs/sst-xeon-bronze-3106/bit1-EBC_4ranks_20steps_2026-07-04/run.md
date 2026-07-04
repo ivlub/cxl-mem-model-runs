@@ -10,5 +10,5 @@
 
 # Results
 - tag 15/23 (field solve / density halo): CXL slightly worse
-- tag 19 (particle exchange): CXL -2.02ms - but maybe because max-capacity buffers are posted (but not read entirely?)
+- tag 19 (particle exchange): CXL -2.02ms
 
