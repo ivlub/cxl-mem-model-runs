@@ -1,1 +1,1 @@
-Archive of SST Traces + performance model outputs for the trace-based MPI->CXL study. Layout: `runs/<simulated-machine>/<deck>_<ranks>_<steps>_<date>/`. Each run's run.md has the exact commands + results.
+Archive of SST Traces + performance model outputs for the trace-based MPI->CXL study. Layout: `runs/<simulated-machine>_<ranks>_<rank_traced>_<steps>_<date>/`. Each run's run.md has the exact commands + results.
