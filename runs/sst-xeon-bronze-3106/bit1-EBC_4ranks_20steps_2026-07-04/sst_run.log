@@ -1,0 +1,158 @@
+luby@i10se26:/scratch/luby/bit1/input_files$ cd /scratch/luby/bit1/input_files
+export OUT=/scratch/luby/bit1-sst-20
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/scratch/luby/caps-fork/.../arielapi/.libs
+export ARIEL_DISABLE_MPI_INIT_CHECK=1
+mkdir -p $OUT
+
+time sst /scratch/luby/caps-fork/sst-simulation-configurable.py -- \
+  -r 4 -t 0 -i 0 -c /scratch/luby/caps-fork/model_configs_example.json \
+  -o $OUT /scratch/luby/bit1/source/BIT1 bit_EBC_ivan_20steps.inp
+Namespace(nranks=4, tracerank=0, out_dir='/scratch/luby/bit1-sst-20', config_file='/scratch/luby/caps-fork/model_configs_example.json', config_index=0, bina
+ry='/scratch/luby/bit1/source/BIT1', args=['bit_EBC_ivan_20steps.inp'])
+
+========================================================================================================================
+Using cache configuration: l1_no_pf_l2_stride_l3_stride
+========================================================================================================================
+
+Done configuring SST model
+ArielComponent[arielcpu.cc:37:ArielCPU] Creating Ariel component...
+ArielComponent[arielcpu.cc:43:ArielCPU] Configuring for 1 cores...
+ArielComponent[arielcpu.cc:46:ArielCPU] Configuring for check addresses = no
+ArielComponent[arielcpu.cc:128:ArielCPU] Loading memory manager: ariel.MemoryManagerSimple
+ArielComponent[arielcpu.cc:134:ArielCPU] Memory manager construction is completed.
+Pin3Frontend[arielfrontendcommon.cc:130:parseCommonSubComponentParams] Ariel-MPI: MPI launcher: build/mpilauncher
+Pin3Frontend[arielfrontendcommon.cc:131:parseCommonSubComponentParams] Ariel-MPI: MPI ranks: 4
+Pin3Frontend[arielfrontendcommon.cc:132:parseCommonSubComponentParams] Ariel-MPI: MPI trace rank: 0
+Pin3Frontend[arielfrontendcommon.cc:137:parseCommonSubComponentParams] Model specifies that there are 1 application arguments
+Pin3Frontend[arielfrontendcommon.cc:144:parseCommonSubComponentParams] Found application argument 0 (apparg0) = bit_EBC_ivan_20steps.inp
+Pin3Frontend[frontend/pin3/pin3frontend.cc:448:parsePin3Params] Interception and instrumentation of multi-level memory and malloc/free calls is DISABLED.
+Pin3Frontend[frontend/pin3/pin3frontend.cc:456:parsePin3Params] Tracking the stack and dumping on malloc calls is DISABLED.
+Pin3Frontend[frontend/pin3/pin3frontend.cc:461:parsePin3Params] Malloc map file is DISABLED
+Pin3Frontend[frontend/pin3/pin3frontend.cc:57:Pin3Frontend] Completed processing application arguments.
+Pin3Frontend[frontend/pin3/pin3frontend.cc:64:Pin3Frontend] Base pipe name: /tmp/sst_shmem_2442935-0-1804289383
+Pin3Frontend[frontend/pin3/pin3frontend.cc:288:setForkArguments] Processing mpilauncher arguments...
+Pin3Frontend[frontend/pin3/pin3frontend.cc:74:Pin3Frontend] Completed initialization of the Ariel CPU.
+ArielComponent[arielcpu.cc:159:ArielCPU] Registering ArielCPU clock at 1.7GHz
+ArielComponent[arielcpu.cc:163:ArielCPU] Clocks registered.
+ArielComponent[arielcpu.cc:165:ArielCPU] Creating core to cache links...
+ArielComponent[arielcpu.cc:167:ArielCPU] Creating processor cores and cache links...
+ArielComponent[arielcpu.cc:169:ArielCPU] Configuring cores and cache links...
+ArielComponent[arielcpu.cc:209:ArielCPU] Completed initialization of the Ariel RTL Link.
+ArielComponent[arielcpu.cc:219:ArielCPU] Completed initialization of the Ariel CPU.
+CustomTracer[src/tracercomponent/customTracer.cpp:103:CustomTracer] CustomTracer component constructed.
+TracerPortModule[src/portmodule/tracerPortModule.cpp:29:TracerPortModule] Tracer PortModule constructed with dataSrc=1.
+TracerPortModule[src/portmodule/tracerPortModule.cpp:53:registerHandlerIntercept] PortModule is attached to port 'highlink' of component 'l1cache_0'.
+TracerPortModule[src/portmodule/tracerPortModule.cpp:29:TracerPortModule] Tracer PortModule constructed with dataSrc=2.
+TracerPortModule[src/portmodule/tracerPortModule.cpp:53:registerHandlerIntercept] PortModule is attached to port 'highlink' of component 'l2cache_0'.
+l2cache_0: No MSHR lookup latency provided (mshr_latency_cycles)...intrapolated to 3 cycles.
+TracerPortModule[src/portmodule/tracerPortModule.cpp:29:TracerPortModule] Tracer PortModule constructed with dataSrc=3.
+TracerPortModule[src/portmodule/tracerPortModule.cpp:53:registerHandlerIntercept] PortModule is attached to port 'highlink' of component 'l3cache'.
+l3cache: No MSHR lookup latency provided (mshr_latency_cycles)...intrapolated to 5 cycles.
+TracerPortModule[src/portmodule/tracerPortModule.cpp:29:TracerPortModule] Tracer PortModule constructed with dataSrc=4.
+TracerPortModule[src/portmodule/tracerPortModule.cpp:53:registerHandlerIntercept] PortModule is attached to port 'highlink' of component 'memory'.
+Pin3Frontend[arielfrontendcommon.cc:65:init] Launching...
+Pin3Frontend[frontend/pin3/pin3frontend.cc:120:forkChildProcess] Executing PIN command: build/mpilauncher 4 0 /scratch/luby/pin/pin -follow_execv -ifeelluck
+y -t /scratch/luby/sst/local/libexec/fesimple.so -w 0 -E 1 -p /tmp/sst_shmem_2442935-0-1804289383 -v 1 -t 0 -c 1 -s 0 -m 0 -k 0 -d 0 -- /scratch/luby/bit1/s
+ource/BIT1 bit_EBC_ivan_20steps.inp
+Pin3Frontend[frontend/pin3/pin3frontend.cc:203:forkChildProcess] Launching executable: build/mpilauncher...
+MPI Command: mpirun -np 1 /scratch/luby/pin/pin -follow_execv -ifeellucky -t /scratch/luby/sst/local/libexec/fesimple.so -w 0 -E 1 -p /tmp/sst_shmem_2442935
+-0-1804289383 -v 1 -t 0 -c 1 -s 0 -m 0 -k 0 -d 0 --  /scratch/luby/bit1/source/BIT1 bit_EBC_ivan_20steps.inp  : -np 3 /scratch/luby/bit1/source/BIT1 bit_EBC
+_ivan_20steps.inp
+XRT build version: 2.19.194
+Build hash: 7d8151e6ee73c6ec2e99501a58c9c2eca6cc68ce
+Build date: 2025-05-18 05:07:43
+Git branch: 2025.1
+PID: 2442938
+UID: 3679
+[Fri Jul  3 18:05:49 2026 GMT]
+HOST: i10se26
+EXE: /opt/mpi/openmpi-5/bin/prte
+[XRT] ERROR: XILINX_XRT must be set
+[XRT] ERROR: XILINX_XRT must be set
+[XRT] ERROR: XILINX_XRT must be set
+ARIEL-SST: Did not find ARIEL_OVERRIDE_POOL in the environment, no override applies.
+ARIEL-SST PIN tool activating with 1 threads
+SSTARIEL: Loading Ariel Tool to connect to SST on pipe: /tmp/sst_shmem_2442935-0-1804289383 max core count: 1
+SSTARIEL: Function profiling is disabled.
+Pin3Frontend[arielfrontendcommon.cc:71:init] Waiting for child to attach.
+Pin3Frontend[arielfrontendcommon.cc:73:init] Child has attached!
+CustomTracer[src/tracercomponent/customTracer.cpp:130:setup] Component is being setup.
+ARIEL: Default memory pool set to 0
+ARIEL: Tool is configured to suspend profiling until program control
+ARIEL: Starting program.
+Identified routine: clock_gettime, replacing with Ariel equivalent...
+Replacement complete.
+Identified routine: MPI_Init. Instrumenting.
+Instrumentation complete
+Identified routine: ariel_enable, replacing with Ariel equivalent...
+Replacement complete.
+Identified routine: ariel_disable, replacing with Ariel equivalent...
+Replacement complete.
+Identified routine: ariel_fence, replacing with Ariel equivalent..
+Replacement complete
+Identified routine: ariel_cycles, replacing with Ariel equivalent..
+Replacement complete
+Identified routine: ariel_output_stats, replacing with Ariel equivalent..
+Replacement complete
+Replacing api_mpi_init with mapped_api_mpi_init.
+Replacement complete
+Identified routine: MPI_Init. Instrumenting.
+Instrumentation complete
+Identified routine: MPI_Init_thread. Instrumenting.
+Instrumentation complete
+Identified routine: MPI_Init_thread. Instrumenting.
+Instrumentation complete
+Identified routine: clock_gettime, replacing with Ariel equivalent...
+Replacement complete.
+Max. number of particles per cell per species: 0  20000 1  20000 2  20000
+Heating of particle species: 0  0 1  0 2  0
+Initial surface charge density at the left wall: 0.000000e+00
+Initial electric field at the right wall 0.000000e+00 [V/m]
+ARIEL: ENABLE called in Ariel API.
+ARIEL: ENABLE called in Ariel API.
+ARIEL: ENABLE called in Ariel API.
+Initial electric field at the left wall 0.000000e+00 [V/m]
+ARIEL: Enabling memory and instruction tracing from program control at simulated Ariel cycle 639472406.
+step 1: 0.230694 s
+step 2: 0.168783 s
+step 3: 0.168577 s
+step 4: 0.168696 s
+step 5: 0.168865 s
+step 6: 0.168691 s
+step 7: 0.168642 s
+step 8: 0.168685 s
+step 9: 0.168571 s
+step 10: 0.939848 s
+step 11: 0.168640 s
+step 12: 0.168661 s
+step 13: 0.168615 s
+step 14: 0.168603 s
+step 15: 0.168584 s
+step 16: 0.168569 s
+step 17: 0.168630 s
+step 18: 0.168650 s
+step 19: 0.168571 s
+ARIEL: DISABLE called in Ariel API.
+ARIEL: DISABLE called in Ariel API.
+ARIEL: DISABLE called in Ariel API.
+step 20: 0.168621 s
+ARIEL: Disabling memory and instruction tracing from program control at simulated Ariel cycle 7793402621.
+CORE ID: 0 PROCESSED AN EXIT EVENT
+SSTARIEL: Execution completed, shutting down.
+ArielComponent[arielcpu.cc:237:finish] Ariel Processor Information:
+ArielComponent[arielcpu.cc:238:finish] Completed at: 4710308285 nanoseconds.
+ArielComponent[arielcpu.cc:239:finish] Ariel Component Statistics (By Core)
+
+Ariel Memory Management Statistics:
+---------------------------------------------------------------------
+Page Table Sizes:
+- Map entries         39387
+Page Table Coverages:
+- Bytes               161329152
+Caught signal 15, exiting gracefully.
+Simulation is complete, simulated time: 4.71031 s
+
+real    143m5.167s
+user    152m6.309s
+sys     7m7.783s
+luby@i10se26:/scratch/luby/bit1/input_files$
