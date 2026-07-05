@@ -6,7 +6,7 @@
 - SST cache policy: l1_no_pf_l2_stride_l3_stride (config/sst_cache.json, index 0)
 - Date: 2026-07-05
 - SST wall-clock: not captured ; simulated time: 4.86 s
-- NOTE: model needs the SST rank-attribution fix (feat/sst-input) to process rank != 0
+- NOTE: model needs the SST rank-attribution fix (feat/sst-traced-rank) to process rank != 0
   (samples.csv 'pid' col is the Ariel core id = 0, not the MPI rank)
 
 # Results
