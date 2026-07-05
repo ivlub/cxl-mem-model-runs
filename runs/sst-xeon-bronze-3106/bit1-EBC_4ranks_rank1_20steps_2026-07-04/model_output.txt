@@ -1,0 +1,284 @@
+Namespace(mitos_output='/home/ivlub/bit1-sst-20-r1', observed_mpi_rank=1, sst=True, sst_cpu_freq=1.7, config='sst_xeon_bronze_3106')
+..... parse_mpi_trace
+parse_MPI_Init: -1783193831565174000 === ['1', 'MPI_Init', '110659998054208', '1783193831565174000', '1783193855718759000', '0', '0', '0', '0', '0', '0', '0']
+parse_MPI_Finalize: -1783193826713278250 === ['1', 'MPI_Finalize', '110659998055369', '4830203602', '4851895750', '0', '0', '0', '0', '0', '0', '0']
+parse_mpi_trace: rank 1 : parsed MPI traces= 124
+..... parse_ld_trace
+{'addr': 126815967834128, 'time': 625069002, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 110660482649296, 'time': 1470571754, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 110660482649304, 'time': 1470571757, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834128, 'time': 1534126607, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834240, 'time': 1534126790, 'lat': 25, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834244, 'time': 1534126793, 'lat': 22, 'lvl': <LOAD_LVL.LFB: 2>}
+{'addr': 126815967834304, 'time': 1534126892, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834308, 'time': 1534126895, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 110660482649296, 'time': 1638394257, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 110660482649304, 'time': 1638394260, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834128, 'time': 1701091556, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834240, 'time': 1701091738, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834244, 'time': 1701091741, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834304, 'time': 1701091840, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834308, 'time': 1701091844, 'lat': 21, 'lvl': <LOAD_LVL.LFB: 2>}
+{'addr': 110660482649296, 'time': 1805235329, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 110660482649304, 'time': 1805235333, 'lat': 21, 'lvl': <LOAD_LVL.LFB: 2>}
+{'addr': 126815967834128, 'time': 1867937425, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834240, 'time': 1867937609, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834244, 'time': 1867937612, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834304, 'time': 1867937711, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834308, 'time': 1867937714, 'lat': 21, 'lvl': <LOAD_LVL.LFB: 2>}
+{'addr': 110660482649296, 'time': 1972077304, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 110660482649304, 'time': 1972077308, 'lat': 21, 'lvl': <LOAD_LVL.LFB: 2>}
+{'addr': 126815967834128, 'time': 2034754286, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834176, 'time': 2034754366, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834180, 'time': 2034754370, 'lat': 21, 'lvl': <LOAD_LVL.LFB: 2>}
+{'addr': 126815967834240, 'time': 2034754468, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834244, 'time': 2034754471, 'lat': 21, 'lvl': <LOAD_LVL.LFB: 2>}
+{'addr': 126815967834304, 'time': 2034754570, 'lat': 25, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834308, 'time': 2034754574, 'lat': 22, 'lvl': <LOAD_LVL.LFB: 2>}
+{'addr': 110660482649296, 'time': 2139037737, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 110660482649304, 'time': 2139037740, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834128, 'time': 2201931366, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834176, 'time': 2201931446, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834180, 'time': 2201931449, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834240, 'time': 2201931547, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834244, 'time': 2201931550, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834304, 'time': 2201931648, 'lat': 25, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834308, 'time': 2201931651, 'lat': 23, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834752, 'time': 2201932364, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834756, 'time': 2201932367, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 110660482649296, 'time': 2306094666, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 110660482649304, 'time': 2306094669, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834128, 'time': 2368773879, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834240, 'time': 2368774062, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834244, 'time': 2368774065, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834304, 'time': 2368774164, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834308, 'time': 2368774167, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 110660482649296, 'time': 2472920400, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 110660482649304, 'time': 2472920404, 'lat': 21, 'lvl': <LOAD_LVL.LFB: 2>}
+{'addr': 126815967834128, 'time': 2535622899, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834240, 'time': 2535623085, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834244, 'time': 2535623088, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834304, 'time': 2535623186, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834308, 'time': 2535623189, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834432, 'time': 2535623388, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834436, 'time': 2535623391, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 110660482649296, 'time': 2639768822, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 110660482649304, 'time': 2639768825, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834128, 'time': 2702397066, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834240, 'time': 2702397251, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834244, 'time': 2702397254, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834304, 'time': 2702397353, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834308, 'time': 2702397356, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834560, 'time': 2702397761, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834564, 'time': 2702397764, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834752, 'time': 2702398067, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834756, 'time': 2702398069, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 110660482649296, 'time': 2806560162, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 110660482649304, 'time': 2806560166, 'lat': 21, 'lvl': <LOAD_LVL.LFB: 2>}
+{'addr': 126815967834128, 'time': 2869280510, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834176, 'time': 2869280592, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834180, 'time': 2869280595, 'lat': 21, 'lvl': <LOAD_LVL.LFB: 2>}
+{'addr': 126815967834240, 'time': 2869280693, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834244, 'time': 2869280696, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834304, 'time': 2869280794, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834308, 'time': 2869280797, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 110660482649296, 'time': 2973424757, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 110660482649304, 'time': 2973424760, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834128, 'time': 3036101765, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834240, 'time': 3036101945, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834244, 'time': 3036101947, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834304, 'time': 3036102047, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834308, 'time': 3036102050, 'lat': 21, 'lvl': <LOAD_LVL.LFB: 2>}
+{'addr': 110660482649296, 'time': 3140255540, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 110660482649304, 'time': 3140255543, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834128, 'time': 3202897293, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834240, 'time': 3202897477, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834244, 'time': 3202897480, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 110660482649296, 'time': 3307058647, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 110660482649304, 'time': 3307058650, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834128, 'time': 3369719533, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834240, 'time': 3369719715, 'lat': 25, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834244, 'time': 3369719719, 'lat': 22, 'lvl': <LOAD_LVL.LFB: 2>}
+{'addr': 126815967834304, 'time': 3369719816, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834308, 'time': 3369719819, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834816, 'time': 3369720625, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834820, 'time': 3369720629, 'lat': 21, 'lvl': <LOAD_LVL.LFB: 2>}
+{'addr': 110660482649296, 'time': 3473899710, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 110660482649304, 'time': 3473899714, 'lat': 21, 'lvl': <LOAD_LVL.LFB: 2>}
+{'addr': 126815967834128, 'time': 3536638665, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834240, 'time': 3536638849, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834244, 'time': 3536638852, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834304, 'time': 3536638952, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834308, 'time': 3536638955, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834752, 'time': 3536639660, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834756, 'time': 3536639663, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 110660482649296, 'time': 3640820246, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 110660482649304, 'time': 3640820249, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834128, 'time': 3703459693, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834240, 'time': 3703459874, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834244, 'time': 3703459877, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834304, 'time': 3703459976, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834308, 'time': 3703459979, 'lat': 21, 'lvl': <LOAD_LVL.LFB: 2>}
+{'addr': 126815967834752, 'time': 3703460687, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834756, 'time': 3703460689, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 110660482649296, 'time': 3807626535, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 110660482649304, 'time': 3807626538, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834128, 'time': 3870288356, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 110660482649296, 'time': 3974466461, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 110660482649304, 'time': 3974466465, 'lat': 21, 'lvl': <LOAD_LVL.LFB: 2>}
+{'addr': 126815967834128, 'time': 4037189967, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834240, 'time': 4037190150, 'lat': 25, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834244, 'time': 4037190153, 'lat': 22, 'lvl': <LOAD_LVL.LFB: 2>}
+{'addr': 126815967834304, 'time': 4037190252, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834308, 'time': 4037190255, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 110660482649296, 'time': 4141351969, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 110660482649304, 'time': 4141351972, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834128, 'time': 4204057498, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834176, 'time': 4204057579, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834180, 'time': 4204057582, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834240, 'time': 4204057682, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834244, 'time': 4204057685, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 110660482649296, 'time': 4308218805, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 110660482649304, 'time': 4308218809, 'lat': 21, 'lvl': <LOAD_LVL.LFB: 2>}
+{'addr': 126815967834128, 'time': 4370896903, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834240, 'time': 4370897086, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834244, 'time': 4370897089, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 110660482649296, 'time': 4475049909, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 110660482649304, 'time': 4475049913, 'lat': 21, 'lvl': <LOAD_LVL.LFB: 2>}
+{'addr': 126815967834128, 'time': 4537719077, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834240, 'time': 4537719261, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834244, 'time': 4537719264, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 126815967834304, 'time': 4537719362, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 126815967834308, 'time': 4537719365, 'lat': 22, 'lvl': <LOAD_LVL.L1: 1>}
+{'addr': 110660482649296, 'time': 4641916398, 'lat': 24, 'lvl': <LOAD_LVL.L2: 3>}
+{'addr': 110660482649304, 'time': 4641916402, 'lat': 21, 'lvl': <LOAD_LVL.LFB: 2>}
+parse_ld_trace: rank 1 : total LD traces= 56600 , out of that MPI LD traces: 56600
+..... parse_papi_measurements (TODO update print)
+Rank stats: {'rank': 1, 'total_ld_samples': 56600, 'found_mpi_ld_traces': 56600, 'found_mpi_ops': 124, 'papi_uncore_avg_mem_ld_throughput': 0.4088686158397276, 'papi_avg_l1_ld_throughput': 30.83276959540436, 'papi_total_num_lds': 2338964762, 'mitos_duration_ns': -1783193826713278250, 'papi_duration_ns': 4855021029, 'papi_avg_mem_ld_throughput_old': 0.4088686158397276, 'papi_l3_ld_miss_cnt': 31016652, 'papi_l1_ld_miss_cnt': 33450825}
+MPI rank 1: avg_mem_ld= 0.4088686158397276  avg_l1_ld= 30.83276959540436  scaling factor= 41324.46575971731
+..... group_into_mpi_calls
+group_into_mpi_calls: added MPI traces: 124 and added LD traces: 56600
+..... aggregate_events_in_mpi_call ========
+  mpi_call 110659998660516:   first_access_percentage=1  (40 samples vs 42.0 expected samples if each element loaded once)
+                  first_access_prefetch_hit_percentage = 0.0   other_access_prefetch_hit_percentage = 0.0(num_cache_hits= 40  num_samples= 40
+  mpi_call 110659998660605:   first_access_percentage=1  (40 samples vs 42.0 expected samples if each element loaded once)
+                  first_access_prefetch_hit_percentage = 0.0   other_access_prefetch_hit_percentage = 0.0(num_cache_hits= 31  num_samples= 40
+  mpi_call 110659998664341:   first_access_percentage=0.42  (100 samples vs 42.0 expected samples if each element loaded once)
+                  first_access_prefetch_hit_percentage = 0.0   other_access_prefetch_hit_percentage = 0.0(num_cache_hits= 100  num_samples= 100
+  mpi_call 110659998664989:   first_access_percentage=0.0004189944134078212  (50120 samples vs 21.0 expected samples if each element loaded once)
+                  first_access_prefetch_hit_percentage = 0.0   other_access_prefetch_hit_percentage = 0.0(num_cache_hits= 50120  num_samples= 50120
+  mpi_call 110659998562467:   first_access_percentage=1  (3124 samples vs 4800060.0 expected samples if each element loaded once)
+                  first_access_prefetch_hit_percentage = 0.0   other_access_prefetch_hit_percentage = 0.0(num_cache_hits= 3124  num_samples= 3124
+  mpi_call 110659998562567:   first_access_percentage=1  (3176 samples vs 4800060.0 expected samples if each element loaded once)
+                  first_access_prefetch_hit_percentage = 0.0   other_access_prefetch_hit_percentage = 0.0(num_cache_hits= 3082  num_samples= 3176
+..... categorize ========
+categorize_MBW:      weight = 0.000   ( thr_l=2.190 ... val=0.409 ... thr_u=24.090 )
+categorize_MLAT:     weight = 1.000   ( thr_l=0.010 ... val=0.849 ... thr_u=0.200 )
+categorize_CBW: weight CBL1 = 0.000   ( thr_l=31.000 ... val=30.833 ... thr_u=62.000 )
+categorize_CBW: weight CBL2 = 0.000   ( thr_l=5.200 ... val=0.441 ... thr_u=39.000 )
+categorize_CLAT:     weight = 0.000   ( thr_l=0.050 ... val=0.014 ... thr_u=0.500 )
+categorize_CBW: weight CBL1 = 0.000   ( thr_l=31.000 ... val=30.833 ... thr_u=62.000 )
+categorize_CBW: weight CBL2 = 0.000   ( thr_l=5.200 ... val=0.441 ... thr_u=39.000 )
+categorize_CLAT:     weight = 0.000   ( thr_l=0.050 ... val=0.014 ... thr_u=0.500 )
+categorize_Mixed:    weight = 0
+{'w_MBW': 0.0, 'w_MLAT': 1.0, 'w_Mixed': 0}
+{'w_MBW': 0.0, 'w_MLAT': 1.0, 'w_CBW': 0.0, 'w_CLAT': 0.0, 'w_Mixed': 0}
+sum weights first touch = 1.0; sum weights = 1.0
+..... calc_mpi_overhead ========
+..... calc_ld_overhead ========
+  mpi_call 110659998660516 -- consolidated weights: {'w_MBW': 0.0, 'w_MLAT': 1.0, 'w_CBW': 0.0, 'w_CLAT': 0.0, 'w_Mixed': 0}
+  mpi_call 110659998660605 -- consolidated weights: {'w_MBW': 0.0, 'w_MLAT': 1.0, 'w_CBW': 0.0, 'w_CLAT': 0.0, 'w_Mixed': 0}
+  mpi_call 110659998664341 -- consolidated weights: {'w_MBW': 0.0, 'w_MLAT': 1.0, 'w_CBW': 0.0, 'w_CLAT': 0.0, 'w_Mixed': 0.0}
+  mpi_call 110659998664989 -- consolidated weights: {'w_MBW': 0.0, 'w_MLAT': 1.0, 'w_CBW': 0.0, 'w_CLAT': 0.0, 'w_Mixed': 0.0}
+  mpi_call 110659998562467 -- consolidated weights: {'w_MBW': 0.0, 'w_MLAT': 1.0, 'w_CBW': 0.0, 'w_CLAT': 0.0, 'w_Mixed': 0}
+  mpi_call 110659998562567 -- consolidated weights: {'w_MBW': 0.0, 'w_MLAT': 1.0, 'w_CBW': 0.0, 'w_CLAT': 0.0, 'w_Mixed': 0}
+======== scale_loads ======== with scaling_factor = 1
+================================================================
+======== PRINT CACHING_BEHAVIOUR ========
+MPI OP: 110659998660516 ( Tag 21 )     Total LDs:    40       L1:    40   LFB:          L2:          L3:         MEM:         
+                             average latencies:      6.0                                                            
+MPI OP: 110659998660605 ( Tag 23 )     Total LDs:    40       L1:    11   LFB:     9    L2:    20    L3:         MEM:         
+                             average latencies:     22.0         21.0         24.0                                  
+MPI OP: 110659998664341 ( Tag 13 )     Total LDs:   100       L1:   100   LFB:          L2:          L3:         MEM:         
+                             average latencies:      6.4                                                            
+MPI OP: 110659998664989 ( Tag 15 )     Total LDs:  50120       L1:  50120   LFB:          L2:          L3:         MEM:         
+                             average latencies:      6.0                                                            
+MPI OP: 110659998562467 ( Tag 17 )     Total LDs:  3124       L1:  3124   LFB:          L2:          L3:         MEM:         
+                             average latencies:      6.0                                                            
+MPI OP: 110659998562567 ( Tag 19 )     Total LDs:  3176       L1:  3018   LFB:    94    L2:    64    L3:         MEM:         
+                             average latencies:      6.2         18.5         24.1                                  
+======== PRINT LATENCY HISTOGRAM ========
+histogram bins:                      10  -   20  -   40  -   80  -  160  -  320  -  640  - 1280  - 2560  - 5120  -
+MPI OP: 110659998660516 ( Tag 21 )        40                                                                            
+MPI OP: 110659998660605 ( Tag 23 )                        40                                                            
+MPI OP: 110659998664341 ( Tag 13 )       100                                                                            
+MPI OP: 110659998664989 ( Tag 15 )       50102      18                                                                    
+MPI OP: 110659998562467 ( Tag 17 )       3124                                                                            
+MPI OP: 110659998562567 ( Tag 19 )       2980      60     136                                                            
+================================================================
+{'rank': 1, 'total_ld_samples': 56600, 'found_mpi_ld_traces': 56600, 'found_mpi_ops': 124, 'papi_uncore_avg_mem_ld_throughput': 0.4088686158397276, 'papi_avg_l1_ld_throughput': 30.83276959540436, 'papi_total_num_lds': 2338964762, 'mitos_duration_ns': -1783193826713278250, 'papi_duration_ns': 4855021029, 'papi_avg_mem_ld_throughput_old': 0.4088686158397276, 'papi_l3_ld_miss_cnt': 31016652, 'papi_l1_ld_miss_cnt': 33450825}
+================================================================
+======== PRINT RESULTS ======== ( rank 1 )
+MPI OP: 110659998660516 ( Tag 21 )
+    MPI
+        data transfer cost:          6741.0
+        data load     cost:            94.1
+    CXL
+        data transfer cost:         18060.0
+        data load     cost:            94.1
+    == TOTAL MPI:          6835.1  ==
+    == TOTAL CXL:         18154.1  ==
+    == DIFFERENCE WITH CXL:  0.000011 seconds.
+MPI OP: 110659998660605 ( Tag 23 )
+    MPI
+        data transfer cost:          6741.0
+        data load     cost:           357.3
+    CXL
+        data transfer cost:         18060.0
+        data load     cost:          1797.3
+    == TOTAL MPI:          7098.3  ==
+    == TOTAL CXL:         19857.3  ==
+    == DIFFERENCE WITH CXL:  0.000013 seconds.
+MPI OP: 110659998664341 ( Tag 13 )
+    MPI
+        data transfer cost:          6720.0
+        data load     cost:           251.0
+    CXL
+        data transfer cost:         18060.0
+        data load     cost:           251.0
+    == TOTAL MPI:          6971.0  ==
+    == TOTAL CXL:         18311.0  ==
+    == DIFFERENCE WITH CXL:  0.000011 seconds.
+MPI OP: 110659998664989 ( Tag 15 )
+    MPI
+        data transfer cost:          6720.0
+        data load     cost:        118002.0
+    CXL
+        data transfer cost:         18060.0
+        data load     cost:        118002.0
+    == TOTAL MPI:        124722.0  ==
+    == TOTAL CXL:        136062.0  ==
+    == DIFFERENCE WITH CXL:  0.000011 seconds.
+MPI OP: 110659998562467 ( Tag 17 )
+    MPI
+        data transfer cost:       2039460.0
+        data load     cost:          7350.6
+    CXL
+        data transfer cost:         17200.0
+        data load     cost:          7350.6
+    == TOTAL MPI:       2046810.6  ==
+    == TOTAL CXL:         24550.6  ==
+    == DIFFERENCE WITH CXL: -0.002022 seconds.
+MPI OP: 110659998562567 ( Tag 19 )
+    MPI
+        data transfer cost:       2039460.0
+        data load     cost:          8609.8
+    CXL
+        data transfer cost:         17200.0
+        data load     cost:         23649.8
+    == TOTAL MPI:       2048069.8  ==
+    == TOTAL CXL:         40849.8  ==
+    == DIFFERENCE WITH CXL: -0.002007 seconds.
+================================================================
+{21: 1.1319000000000001e-05, 23: 1.2759000000000004e-05, 13: 1.134e-05, 15: 1.1339999999999986e-05, 17: -0.00202226, 19: -0.002007219999999999}
+================================================================
